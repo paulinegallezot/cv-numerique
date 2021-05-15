@@ -20,8 +20,27 @@ html,body{
 #about{
     font-family: "Special Elite", cursive;
 }
-.profilPict{
-    height: 400px;
-    
+.aboutTitle,.formationTitle{
+    background-color: #b9a06b;
 }
-
+.formation{
+    font-family: "Special Elite", cursive;
+}
+.pieceWhite{
+    height: 350px;
+}
+.piece1,.piece2,.piece3,.piece4 {
+    position: relative;
+    text-align: center;
+    
+  }
+  
+  .texteTp,.texteDoc,.texteEsra,.texteBac {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .date2021,.date2014,.date2004,.date1999{
+      font-size: 30px;
+  }

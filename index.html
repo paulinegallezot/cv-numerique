@@ -36,10 +36,10 @@
                             <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">à propos</a>
+                            <a class="nav-link" href="#about">à propos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Formations</a>
+                            <a class="nav-link" href="#formation">Formations</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link"href="#">Compétences</a>  
@@ -58,27 +58,70 @@
             </nav>
         </div>
     </div>
-    <section class="about container-fluid h-100" id="about">
-        <div class="row">
-            <div class="col-12 bg-light text-center">
-                <h2>A PROPOS</h2>
-            </div>
-        </div>
-        <div class="row d-flex flex-column">
-            <div class="col-8 offset-2">
-                <div class="profilPict mb-0 ">
-                    <img src="/assets/img/profil.jpg" class="img-fluid"alt="photo de profil">
+    <!-- container à propos -->
+    <section class="about container-fluid" id="about">
+        <h2 class=" aboutTitle text-center mt-3 border">A PROPOS</h2>
+            <div class="row d-sm-flex justify-content-sm-between">
+                <div class="myPict col-4 col-sm-2">
+                    <img src="/assets/img/profil.jpg" class="img-thumbnail" alt="ma photo de profil">
                 </div>
-                <div class="title">
-                    <h4 class="border text-center">Pauline Gallezot</h4>
-                    <h5 class="border text-center">Développeuse Web Junior</h5>
+                <div class="text col-10 align-items">
+                    <h3 class="col-10 col-sm-3 border text-center"> Pauline gallezot</h3>
+                    <h4 class="col-1O col-sm-3 border text-center">Développeuse Web junior</h4>
+                    <p class="mt-1">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                 </div>
             </div>
-        <div class="row">
-            <div class=" col-12 text">
-            <p>Lorem ipsum dolor si amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </section>
+    <!-- container formation -->
+    <section class="formation container-fluid h-100" id="formation">
+        <h2 class="formationTitle text-center mt-4 mb-0 border">FORMATION</h2>
+        <div class="d-sm-flex justify-content-sm-around align-items-center">
+            <div class="piece1">
+                <img src="/assets/img/Calque 19.png" class=" pieceWhite img-fluid">
+                    <div class="texteTp">
+                        <p><strong>Tp développeur Web et Web mobile</strong></p>
+                        <P>LaManu, 70 rue des jacobins, 80000 Amiens</P>
+                    </div>
+            </div>
+            <div class="date2021">
+                <p>2021</p>
             </div>
         </div>
+        <div class="d-sm-flex justify-content-sm-around align-items-center">
+            <div class="date2014">
+                <p>2014</p>
+            </div>
+            <div class="piece2">
+                <img src="/assets/img/Calque 19.png" class=" pieceWhite img-fluid">
+                    <div class="texteDoc">
+                        <p><strong> Licence Métiers de la documentation audiovisuelle</strong></p>
+                        <p>CNAM, 292 rue Saint-Martin, 75003 Paris </p>
+                    </div>
+            </div>
+            
+        </div>
+        <div class="d-sm-flex justify-content-sm-around align-items-center">
+            <div class="piece3">
+                <img src="/assets/img/Calque 19.png" class=" pieceWhite img-fluid">
+                    <div class="texteEsra">
+                        <p><strong> Ecole supérieure de réalisation audiovisuelle</strong></p>
+                        <p>ESRA, 9 Quai des Deux Emmanuels, 06300 Nice</p>
+                    </div>
+            </div>
+            <div class="date2004">
+                <p>2004</p>
+            </div>
+        </div>
+        <div class="d-sm-flex justify-content-sm-around align-items-center">
+            <div class="date1999">
+                <p>1999</p>
+            </div>
+            <div class=" piece4">
+                <img src="/assets/img/Calque 19.png" class=" pieceWhite img-fluid">
+                    <div class="texteBac">
+                        <p><strong>Baccalauréat série économique et social</strong></p>
+                    </div>
+            </div>
         </div>
     </section>
 
