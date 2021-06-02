@@ -26,21 +26,33 @@ html,body{
 .formation{
     font-family: "Special Elite", cursive;
 }
-.pieceWhite{
-    height: 350px;
+.formationSubtitle{
+    font-size: 20px;
 }
-.piece1,.piece2,.piece3,.piece4 {
-    position: relative;
-    text-align: center;
-    
-  }
-  
-  .texteTp,.texteDoc,.texteEsra,.texteBac {
+.formationContent{
+    font-size: 19px;
+}
+
+.formationName,.formationDetails{
+    background-color: #ebe0dc;
+}
+.formationDate{
+    background-color:#b9a06b;
+    position: relative; 
+}
+.reddot{
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    border: 5px solid #ebe0dc;;
+    border-radius: 15px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .date2021,.date2014,.date2004,.date1999{
-      font-size: 30px;
-  }
+    
+}
+.left-dot{
+    left: -15px;
+}
+.right-dot{
+    top: 7px;
+    right: -15px;
+}
