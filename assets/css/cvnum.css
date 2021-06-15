@@ -6,8 +6,8 @@ html,body{
     background-image: url(../img/puzzle2.jpg);
     background-size: cover;
     background-position: center;
-    font-family: "Special Elite", cursive;
-    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
 }
 @media (min-width: 768px){
     #homepage{
@@ -15,16 +15,16 @@ html,body{
     }
 }
 #menu{
-    font-family: "Special Elite", cursive;
+    font-family: 'Roboto', sans-serif;
 }
 #about{
-    font-family: "Special Elite", cursive;
+    font-family: 'Roboto', sans-serif;
 }
-.aboutTitle,.formationTitle{
+.aboutTitle,.formationTitle,.skillsTitle,.experienceTitle{
     background-color: #b9a06b;
 }
-.formation{
-    font-family: "Special Elite", cursive;
+.formation,.skills,.experience{
+    font-family: 'Roboto', sans-serif;
 }
 .formationSubtitle{
     font-size: 20px;
@@ -34,25 +34,34 @@ html,body{
 }
 
 .formationName,.formationDetails{
-    background-color: #ebe0dc;
+    background-color: #f6efec;
 }
 .formationDate{
-    background-color:#b9a06b;
-    position: relative; 
+    background-color:#b9a06b; 
 }
 .reddot{
     height: 30px;
     width: 30px;
     background-color: black;
-    border: 5px solid #ebe0dc;;
+    border: 5px solid #f6efec;
     border-radius: 15px;
     position: absolute;
-    
 }
 .left-dot{
     left: -15px;
+    
 }
 .right-dot{
     top: 7px;
     right: -15px;
+    z-index: 1;
+}
+
+.label{
+    background-color: black;
+    color: white;
+}
+.skillName{
+    background-color: black;
+    color: cornsilk;
 }
