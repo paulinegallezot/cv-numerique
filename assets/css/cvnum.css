@@ -20,10 +20,8 @@ html,body{
 #about{
     font-family: 'Roboto', sans-serif;
 }
-.aboutTitle,.formationTitle,.skillsTitle,.experienceTitle{
-    background-color: #b9a06b;
-}
-.formation,.skills,.experience{
+
+.formation,.skills,.experience,.realisation{
     font-family: 'Roboto', sans-serif;
 }
 .formationSubtitle{
@@ -34,16 +32,17 @@ html,body{
 }
 
 .formationName,.formationDetails{
-    background-color: #f6efec;
+    background-color: #EBEBEB;
 }
 .formationDate{
-    background-color:#b9a06b; 
+    background-color:#832232;
+    color:white; 
 }
 .reddot{
     height: 30px;
     width: 30px;
     background-color: black;
-    border: 5px solid #f6efec;
+    border: 5px solid #EBEBEB;
     border-radius: 15px;
     position: absolute;
 }
@@ -65,3 +64,21 @@ html,body{
     background-color: black;
     color: cornsilk;
 }
+h5{
+    font-size: 20px;
+    margin: 0px;
+    
+}
+.experienceContent{
+    box-shadow: 3px 3px 5px 0px;
+    border-radius: 5px;
+    background-color: #EBEBEB;
+}
+.sectionTitle,.aboutTitle,.formationTitle,.skillsTitle,.experienceTitle{
+    color:#832232;
+}
+
+.skills,.about,.realisation{
+    background-color: #EBEBEB;
+}
+
