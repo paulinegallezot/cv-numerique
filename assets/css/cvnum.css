@@ -3,7 +3,7 @@ html,body{
 }
 /* page d'accueil */
 #homepage{
-    background-image: url(../img/scaffold.jpg);
+    background-image: url(../img/scaffold.png);
     
     background-size: cover;
     background-position: center;
@@ -34,8 +34,8 @@ html,body{
     background-color: #EBEBEB;
 }
 .formationDate{
-    background-color:#832232;
-    color:white; 
+    border-radius: 5px;
+    border: 1px solid black;
 }
 .reddot{
     height: 30px;
@@ -125,4 +125,8 @@ h5{
     background-size: cover;
     color: black;
   }
-  
+  .street{
+    background-image: url(/assets/img/street.png);
+    background-size: cover;
+    color: black;
+  }
