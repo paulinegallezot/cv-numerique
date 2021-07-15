@@ -12,17 +12,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/875067448f.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="container-fluid h-100">
         <!-- page d'accueil -->
         <div class="row h-100" id="homepage">
-            <div class="col-12 mt-5">
-                <div class="" id="name">
+            <div class="col-12 mt-5 d-flex justify-content-center align-items-center">
+                <div class="name" id="name">
                     <h1>PAULINE GALLEZOT</h1>
+
                     <p>Développeuse Web junior</p>
                 </div>
             </div>
@@ -31,7 +35,7 @@
     <!-- menu -->
     <div class="row" id="menu">
         <div class="col-12 p-0">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="#">Menu</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,20 +70,51 @@
         </div>
     </div>
     <!-- container à propos -->
-    <section class="about container-fluid" id="about">
-        <h1 class=" aboutTitle text-center mt-3">A propos</h1>
-        <div class="row d-sm-flex justify-content-sm-between">
-            <div class="myPict col-4 col-sm-2 mb-5">
-                <img src="/assets/img/profil.jpg" class="img-thumbnail" alt="ma photo de profil">
+    <section class="about container-fluid pb-3" id="about">
+        <h1 class=" aboutTitle  joli">A propos</h1>
+        <div class="row justify-content-center">
+            <div class="card mb-3 " style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="/assets/img/profil.jpg" class="img-fluid rounded-start"
+                            alt="photo de profil pauline gallezot">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Pauline Gallezot</h5>
+                            <h6 class="card-title">Développeuse Web junior</h6>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="text col-10 align-items">
-                <h3 class="col-10 col-sm-3 "> Pauline gallezot</h3>
-                <h4 class="col-1O col-sm-4 ">Développeuse Web junior</h4>
-                <p class="mt-5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <div class="col-6 p-5">
+                <div class="contact text-center">
+                    <div class="row">
+                        <div class="col-4 me-2">
+                            <i class="fas fa-tty"></i>
+                            <div class="mt-3">
+                            <a href="tel:0623333468">06 23 33 34 68</a>
+                            </div>
+                        </div>
+                        <div class="col-4 me-2 ms-2">
+                            <i class="fas fa-at"></i>
+                            <div class="mt-3">
+                            <a href="mailto:paulinegallezot@gmail.com">paulinegallezot@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="col-4 ms-4">
+                            <i class="far fa-envelope"></i>
+                            <div class="mt-3">
+                            <p>15 allée des conversations<br>80000, Amiens</p>
+                            
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -87,11 +122,11 @@
     <!-- container formation -->
     <section id="formation">
         <div class="formation container-fluid h-100" id="formation">
-            <div class="row text-center">
+            <div class="row">
                 <div class="col-md-12">
                     <div class="section-title">
-                        <h1 class="formationTitle">Education</h1>
-                        <h2 class="formationSubtitle">Diplômes et formations</h2>
+                        <h1 class="formationTitle joli">Education</h1>
+                        
                     </div>
                 </div>
             </div>
@@ -204,141 +239,130 @@
     <!-- debut container competences -->
     <section id="skills">
         <div class="skills container-fluid h-100 mt-4">
-            <div class="row text-center">
+            <div class="row">
                 <div class="col-md-12">
                     <div class="section-title">
-                        <h1 class="skillsTitle">Compétences</h1>
+                        <h1 class="skillsTitle joli">Compétences</h1>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4 ">
-                    <div class="card mb-3">
-                        <div class="row text-center d-flex justify-content-around g-0">
-                            <div class="col-md-6 skillName ">
-                                <div class="card-body">
-                                    <h5 class="card-title">HTML5 & CSS3</h5>
-
+            <div class="row justify-content-around align-items-center">
+                <div class="col-6 skillBox">
+                    <div class="frontTitle">
+                        <h2>Front-end</h2>
+                        <p>Création et intégration de sites web responsives, accessibles et répondant aux normes W3C.</p>
+                    </div> 
+                    <div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-4">
+                                    <p>HTML5<br>CSS3<br>Javascript<br>Bootstrap</p>
                                 </div>
-                            </div>
-                            <div class="col-md-6 pourcent">
-                                <div class="card-body">
-                                    <h5 class="card-title">75%</h5>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-3">
-                        <div class="row text-center d-flex justify-content-around g-0">
-                            <div class="col-md-6 skillName ">
-                                <div class="card-body">
-                                    <h5 class="card-title">JAVASCRIPT</h5>
-
-                                </div>
-                            </div>
-                            <div class="col-md-6 pourcent">
-                                <div class="card-body">
-                                    <h5 class="card-title">75%</h5>
-
+                                <div class="col-4">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i><br>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i><br>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i></i>
+                                    <i class="far fa-star"></i><br>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card mb-3">
-                        <div class="row text-center d-flex justify-content-around g-0">
-                            <div class="col-md-6 skillName ">
-                                <div class="card-body">
-                                    <h5 class="card-title">WORDPRESS</h5>
-
-                                </div>
-                            </div>
-                            <div class="col-md-6 pourcent">
-                                <div class="card-body">
-                                    <h5 class="card-title">75%</h5>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-4">
+                    <i class="fas fa-code text-center"></i>
                 </div>
-                <div class="col-md-4">
-                    <div class="card mb-3">
-                        <div class="row text-center d-flex justify-content-around g-0">
-                            <div class="col-md-6 skillName ">
-                                <div class="card-body">
-                                    <h5 class="card-title">PHP</h5>
-
-                                </div>
-                            </div>
-                            <div class="col-md-6 pourcent">
-                                <div class="card-body">
-                                    <h5 class="card-title">75%</h5>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-3">
-                        <div class="row text-center d-flex justify-content-around g-0">
-                            <div class="col-md-6 skillName ">
-                                <div class="card-body">
-                                    <h5 class="card-title">BOOTSTRAP</h5>
-
-                                </div>
-                            </div>
-                            <div class="col-md-6 pourcent">
-                                <div class="card-body">
-                                    <h5 class="card-title">75%</h5>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-3">
-                        <div class="row text-center d-flex justify-content-around g-0">
-                            <div class="col-md-6 skillName ">
-                                <div class="card-body">
-                                    <h5 class="card-title">PHOTOSHOP</h5>
-
-                                </div>
-                            </div>
-                            <div class="col-md-6 pourcent">
-                                <div class="card-body">
-                                    <h5 class="card-title">75%</h5>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-4">
+                    <i class="fas fa-database text-center"></i>
+                </div>
+                <div class="col-6 skillBox">
+                    <div class="frontTitle">
+                        <h2>Back-end</h2>
+                        <p>Développement de sites web, création et gestion de bases de données, programmation orientée objet, mise en ligne.</p>
+                    </div> 
+                    <div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-4">
+                                    <p>PHP7<br>MySQL<br>SEO</p>
+                                </div>
+                                <div class="col-4">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i><br>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i><br>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row justify-content-around align-items-center">
+                <div class="col-6 skillBox">
+                    <div class="frontTitle">
+                        <h2>CMS</h2>
+                        <p>Création et édition de thèmes et plugins. Mon expérience est principalement portée sur WordPress. Utilisation des plugins WooCommerce et Yoast SEO.</p>
+                    </div> 
+                    <div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-4">
+                                    <p>Wordpress</p>
+                                </div>
+                                <div class="col-4">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <i class="fas fa-user-edit text-center"></i>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- fin section compétences -->
     <!-- debut section experiences -->
     <section id="experience">
         <div class="experience container-fluid h-100" id="experience">
-            <div class="row text-center">
+            <div class="row">
                 <div class="col-md-12">
                     <div class="section-title">
-                        <h1 class="experienceTitle">Experiences</h1>
+                        <h1 class="experienceTitle joli">Experiences</h1>
                     </div>
                 </div>
             </div>
             <div class="row  d-flex justify-content-center align-items-center">
                 <div class="col-2">
-                    <p>2017 à aujourd'hui</p>
+                    <p class="date">2017 à aujourd'hui</p>
                 </div>
-                <div class="experienceContent col-6 d-flex justify-content-around align-items-center ">
+                <div class="experienceContent col-6 d-flex justify-content-around align-items-center " id="myDIV">
                     <div>
                         <h3>Conseillère bancaire</h3>
                         <h4>Orange Bank, Amiens</h4>
@@ -356,9 +380,9 @@
             </div>
             <div class="row d-flex justify-content-center align-items-center mt-5">
                 <div class="col-2">
-                    <p>2015 à 2017</p>
+                    <p class="date">2015 à 2017</p>
                 </div>
-                <div class="experienceContent col-6 d-flex justify-content-around align-items-center">
+                <div class="experienceContent col-6 d-flex justify-content-around align-items-center" id="foo">
                     <div>
                         <h3>Documentaliste</h3>
                         <h4>Collège Parmentier, Montdidier </h4>
@@ -374,12 +398,12 @@
             </div>
             <div class="row d-flex justify-content-center align-items-center mt-5">
                 <div class="col-2">
-                    <p>2004 à 2013</p>
+                    <p class="date">2004 à 2013</p>
                 </div>
-                <div class="experienceContent col-6">
+                <div class="experienceContent col-6 d-flex justify-content-around align-items-center">
                     <h3>Scripte</h3>
                     <h4>Cinéma, télévision et publicité </h4>
-s
+                    
                     <ul>
                         <li>Continuité et cohérence du scénario sur les tournages</li>
                         <li>Minutage</li>
@@ -393,10 +417,10 @@ s
     <!-- debut section port folio -->
     <section id="realisation">
         <div class="realisation container-fluid h-100" id="experience">
-            <div class="row text-center d-flex">
+            <div class="row">
                 <div class="col-md-12">
                     <div class="section-title">
-                        <h1 class="realisationTitle mt-5">Port-folio</h1>
+                        <h1 class="realisationTitle joli mt-5">Port-folio</h1>
                     </div>
                 </div>
             </div>
@@ -458,8 +482,21 @@ s
             </div>
         </div>
     </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img src="assets/img/facebook.png" alt="logo facebook">
+                    <img src="assets/img/linkedin.png" alt="logo linkedin">
+                    <button class="item" id="cv" type="submit" onclick="window.open('files/CV.pdf')">
+                        Télécharger mon CV
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-
+    <script src="assets/js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>

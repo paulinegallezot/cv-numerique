@@ -10,18 +10,22 @@ html,body{
     font-family: 'Roboto', sans-serif;
     
     font-weight: bolder;
-    color:#83223d;
+    color:#d90429;
 }
+
 
 #menu{
     font-family: 'Roboto', sans-serif;
+    font-size: large;
 }
 #about{
     font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 .formation,.skills,.experience,.realisation{
     font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 .formationSubtitle{
     font-size: 20px;
@@ -72,14 +76,15 @@ h5{
     box-shadow: 3px 3px 5px 0px;
     border-radius: 5px;
     background-color: #EBEBEB;
+    
 }
-.sectionTitle,.aboutTitle,.formationTitle,.skillsTitle,.experienceTitle{
-    color:#832232;
+.sectionTitle,.aboutTitle,.formationTitle,.skillsTitle,.experienceTitle,.realisationTitle{
+    color:#40595d;
+    font-weight: 700;
+    font-size: 60px;
 }
 
-.skills,.about,.realisation{
-    background-color: #EBEBEB;
-}
+
 .flip-box {
     background-color: transparent;
     width: 400px;
@@ -130,3 +135,62 @@ h5{
     background-size: cover;
     color: black;
   }
+  .telephone{
+      font-size: 20px;
+  }
+  .fa-tty,.fa-at,.fa-envelope{
+      font-size: 60px;
+      color: #7eb3bb;
+  }
+  .date{
+      font-size: 20px;
+  }
+  
+  .joli {
+    padding : 1em;
+    width: 100%;
+    height: 200px;
+    box-sizing: border-box;
+    background-image: linear-gradient(175deg, rgba(0,0,0,0) 95%, #d4f2f6 95%),
+                      linear-gradient( 85deg, rgba(0,0,0,0) 95%, #aadee6 95%),
+                      linear-gradient(175deg, rgba(0,0,0,0) 90%, #96cbd3 90%),
+                      linear-gradient( 85deg, rgba(0,0,0,0) 92%, #8bc2ca 92%),
+                      linear-gradient(175deg, rgba(0,0,0,0) 85%, #7eb3bb 85%),
+                      linear-gradient( 85deg, rgba(0,0,0,0) 89%, #74a6ae 89%),
+                      linear-gradient(175deg, rgba(0,0,0,0) 80%, #72a2aa 80%),
+                      linear-gradient( 85deg, rgba(0,0,0,0) 86%, #6e8f94 86%),
+                      linear-gradient(175deg, rgba(0,0,0,0) 75%, #5b7f85 75%),
+                      linear-gradient( 85deg, rgba(0,0,0,0) 83%, #5d7e83 83%),
+                      linear-gradient(175deg, rgba(0,0,0,0) 70%, #516c70 70%),
+                      linear-gradient( 85deg, rgba(0,0,0,0) 80%, #40595d 80%);
+  }
+  
+  #myDIV {
+    border: 1px solid black;
+    background-color: #EBEBEB;
+    width: 270px;
+    height: 200px;
+    overflow: auto;
+    transition: all 1s;
+  }
+  
+  #myDIV:hover {
+    background-color: #fffdfd;
+    width: 400px;
+    height: 300px;
+    padding: 100px;
+    border-radius: 50px;
+  }
+  .skillBox{
+    box-shadow: 3px 3px 5px 0px;
+    border-radius: 5px;
+    background-color: #EBEBEB;
+  }
+  .fa-star,.fa-star-half-alt{
+      color:#17c2e0;
+  }
+  .fa-code,.fa-database,.fa-user-edit{
+      font-size: 100px;
+      color:#17c2e0;
+  }
+  
