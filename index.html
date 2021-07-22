@@ -17,13 +17,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
 </head>
 
 <body>
     <div class="container-fluid h-100">
         <!-- page d'accueil -->
         <div class="row h-100" id="homepage">
-
             <div class="col-12 p-0 justify-content-around">
                 <div id="menu">
                     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -34,7 +35,6 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav">
-
                                 <li class="nav-item">
                                     <a class="nav-link" href="#about">à propos</a>
                                 </li>
@@ -50,73 +50,81 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="#realisation">Port-folio</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/assets/img/cv.pdf">Téléchargez mon cv</a>
-                                </li>
                             </ul>
                         </div>
                     </nav>
                 </div>
-                <div class="col-12 text-center mt-5">
-                    <div class="name" id="name">
-                        <h1>PAULINE GALLEZOT</h1>
-                        <p>Développeuse Web junior</p><br>
+            </div>
+            <div class="col-12 text-center">
+                <div>
+                    <h1 class="titleName wow animate__animated animate__fadeInTopLeft" data-wow-delay="1s">PAULINE GALLEZOT</h1>
+                    
+                    <p class="titlePost wow animate__animated animate__fadeInTopRight" data-wow-delay="1.5s">Développeuse web junior</p>
+                </div>
+            </div>
+            <div class="col-12 contact">
+                <div class="d-md-flex text-center">
+                    <div class="col-md-3 me-2">
+                        <div class="mt-3">
+                            <a href="tel:0623333468" target="_blank"><i class="fas fa-tty"></i></a><br>
+                            <p class="contact mt-3">06 23 33 34 68</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 me-2 ms-2">
+                        <div class="mt-3">
+                            <a href="mailto:paulinegallezot@gmail.com" target="_blank"><i class="fas fa-at"></i></a>
+                            <p class="contact mt-3">paulinegallezot@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 me-2 ms-2">
+                        <div class="mt-3">
+                            <a href="/assets/img/cv.pdf" target="_blank"><i class="fas fa-download"></i></i></a>
+                            <p class="contact mt-3">CV</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ms-4">
+                        <i class="far fa-envelope"></i>
+                        <div class="mt-3">
+                            <p>15 allée des conversations<br>80000, Amiens</p>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="col-12 text-center m-0 p-0">
+                <a href="#about"><i class="far fa-arrow-alt-circle-down animate__animated animate__bounce animate__infinite"></i></a>
             </div>
         </div>
     </div>
-    <!-- menu -->
+    
 
     <!-- container à propos -->
-    <section class="about container-fluid m-0 pb-3">
-        <h1 class="aboutTitle text-center">A propos</h1>
+    <section class="about container-fluid m-0 pb-3" id="about">
+        <div class="section-title h-100">
+            <h1 class="aboutTitle text-center">A propos</h1>
+        </div>
         <div class="row justify-content-center">
-            <div class="card mb-3 " style="max-width: 540px;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="/assets/img/profil.jpg" class="img-fluid rounded-start"
-                            alt="photo de profil pauline gallezot">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Pauline Gallezot</h5>
-
-                            <p class="card-text">Mon parcours atypique a fait de moi une personne autonome, adaptable,
-                                sociable et autodidacte. Curieuse, passionnée et sérieuse j'accomplie chacune de mes
-                                missions avec une grande conscience professionnelle et le goût du travail bien fait.</p>
-
-                        </div>
-                    </div>
-                </div>
+            <div class="col-sm-4 wow animate__animated animate__fadeInLeft" data-wow-delay="1s">
+                <img src="assets/img/profil.png" alt="photo de pauline gallezot">
             </div>
-            <div class="col-6 p-5">
-                <div class="contact text-center">
-                    <div class="row">
-                        <div class="col-4 me-2">
-                            <i class="fas fa-tty"></i>
-                            <div class="mt-3">
-                                <a href="tel:0623333468">06 23 33 34 68</a>
-                            </div>
-                        </div>
-                        <div class="col-4 me-2 ms-2">
-                            <i class="fas fa-at"></i>
-                            <div class="mt-3">
-                                <a href="mailto:paulinegallezot@gmail.com">paulinegallezot@gmail.com</a>
-                            </div>
-                        </div>
-                        <div class="col-4 ms-4">
-                            <i class="far fa-envelope"></i>
-                            <div class="mt-3">
-                                <p>15 allée des conversations<br>80000, Amiens</p>
-
-                            </div>
-                        </div>
-
+            <div class="col-sm-3">
+                <div>
+                    <div class="myName border text-center mb-3 mt-2 wow animate__animated animate__fadeInRight" data-wow-delay="1s" >
+                        <p>Pauline Gallezot</p>
+                        
+                    </div>
+                    <div class="myPost border text-center mb-3 wow animate__animated animate__fadeInRight" data-wow-delay="1s">
+                        <p>Développeuse web junior</p>
+                    </div>
+                    <div class="wow animate__animated animate__fadeInRight" data-wow-delay="1s">
+                        <p>Mon parcours atypique a fait de moi une personne autonome, adaptable,
+                        sociable et autodidacte. j'accomplie chacune de mes
+                        missions avec une grande conscience professionnelle et le goût du travail bien fait</p>
                     </div>
                 </div>
             </div>
         </div>
+        
+        
     </section>
     <!-- fin container a propos -->
     <!-- container formation -->
@@ -125,8 +133,8 @@
             <div class="section-title h-100">
                 <h1 class="formationTitle text-center">Formations</h1>
             </div>
-            <div class="row text-center d-flex justify-content-center align-items-center mt-3">
-                <div class="col-3 formationName rounded p-2">
+            <div class="d-sm-flex text-center justify-content-center align-items-center mt-3 ms-1 me-1">
+                <div class="col-sm-3 formationName rounded p-2 wow animate__animated animate__fadeInLeft" data-wow-delay="1s">
                     <div>
                         <div class="content">
                             <h2 class="formationContent">TP développeur Web et Web mobile</h2>
@@ -134,7 +142,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-2 formationDate rounded p-2">
+                <div class="col-sm-2 formationDate rounded p-2 wow animate__animated animate__fadeInLeft" data-wow-delay="1s">
                     <div>
                         <div class="reddot left-dot"></div>
                         <div>
@@ -143,7 +151,7 @@
                         <div class="reddot right-dot"></div>
                     </div>
                 </div>
-                <div class="col-3 formationDetails rounded p-2">
+                <div class="col-sm-3 formationDetails rounded p-2 wow animate__animated animate__fadeInRight" data-wow-delay="1s">
                     <div>
                         <div class="content">
                             <p>Ecole des métiers du numérique, Lamanu, Amiens.</p>
@@ -151,15 +159,15 @@
                     </div>
                 </div>
             </div>
-            <div class="row text-center d-flex justify-content-center align-items-center mt-3">
-                <div class="col-3 formationName rounded p-2">
+            <div class="d-sm-flex text-center  justify-content-center align-items-center mt-3">
+                <div class="col-sm-3 formationName rounded p-2 wow animate__animated animate__fadeInLeft" data-wow-delay="1s">
                     <div>
                         <div class="content">
                             <h2 class="formationContent">Licence métiers de la documentation audiovisuelle</h2>
                         </div>
                     </div>
                 </div>
-                <div class="col-2 formationDate rounded p-2">
+                <div class="col-sm-2 formationDate rounded p-2 wow animate__animated animate__fadeInLeft" data-wow-delay="1s">
                     <div>
                         <div class="reddot left-dot"></div>
                         <div>
@@ -168,7 +176,7 @@
                         <div class="reddot right-dot"></div>
                     </div>
                 </div>
-                <div class="col-3 formationDetails rounded p-2">
+                <div class="col-sm-3 formationDetails rounded p-2 wow animate__animated animate__fadeInRight" data-wow-delay="1s">
                     <div>
                         <div class="content">
                             <p>Conservatoire national des arts et métiers, 75003 Paris.</p>
@@ -176,8 +184,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row text-center d-flex justify-content-center align-items-center mt-3">
-                <div class="col-3 formationName rounded p-2">
+            <div class="d-sm-flex text-center justify-content-center align-items-center mt-3">
+                <div class="col-sm-3 formationName rounded p-2 wow animate__animated animate__fadeInLeft" data-wow-delay="1s">
                     <div>
                         <div class="content">
                             <h2 class="formationContent">TP réalisation audiovisuelle</h2>
@@ -185,7 +193,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-2 formationDate rounded p-2">
+                <div class="col-sm-2 formationDate rounded p-2 wow animate__animated animate__fadeInLeft" data-wow-delay="1s">
                     <div>
                         <div class="reddot left-dot"></div>
                         <div>
@@ -194,7 +202,7 @@
                         <div class="reddot right-dot"></div>
                     </div>
                 </div>
-                <div class="col-3 formationDetails rounded p-2">
+                <div class="col-sm-3 formationDetails rounded p-2 wow animate__animated animate__fadeInRight" data-wow-delay="1s">
                     <div>
                         <div class="content">
                             <p>ESRA, école supérieure de réalisation audiovisuelle, 06000 Nice</p>
@@ -202,8 +210,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row text-center d-flex justify-content-center align-items-center mt-3">
-                <div class="col-3 formationName rounded p-2">
+            <div class="d-sm-flex text-center justify-content-center align-items-center mt-3">
+                <div class="col-sm-3 formationName rounded p-2 wow animate__animated animate__fadeInLeft" data-wow-delay="1s">
                     <div>
                         <div class="content">
                             <h2 class="formationContent">baccalauréat</h2>
@@ -211,7 +219,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-2 formationDate p-2">
+                <div class="col-sm-2 formationDate p-2 wow animate__animated animate__fadeInLeft" data-wow-delay="1s">
                     <div>
                         <div class="reddot left-dot"></div>
                         <div>
@@ -220,7 +228,7 @@
                         <div class="reddot right-dot"></div>
                     </div>
                 </div>
-                <div class="col-3 formationDetails rounded p-2">
+                <div class="col-sm-3 formationDetails rounded p-2 wow animate__animated animate__fadeInRight" data-wow-delay="1s">
                     <div>
                         <div class="content">
                             <p>Lycée Pablo Picasso, 94120 Fontenay sous bois</p>
@@ -237,9 +245,9 @@
             <div class="section-title">
                 <h1 class="skillsTitle text-center">Compétences</h1>
             </div>
-            <div class="row justify-content-around align-items-center mt-5">
-                <div class="col-6 skillBox">
-                    <div class="frontTitle">
+            <div class="row justify-content-around align-items-center mt-5" id="front">
+                <div class="col-10 col-md-6 skillBox wow animate__animated animate__fadeInLeft" data-wow-delay="2s">
+                    <div class="frontTitle text-center">
                         <h2>Front-end</h2>
                         <p>Création et intégration de sites web responsives, accessibles et répondant aux normes W3C.
                         </p>
@@ -250,7 +258,7 @@
                                 <div class="col-4">
                                     <p>HTML5<br>CSS3<br>Javascript<br>Bootstrap</p>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-5 col-md-4">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
@@ -272,16 +280,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 text-center">
+                <div class="col-4 icon text-center">
                     <i class="fas fa-code"></i>
                 </div>
             </div>
             <div class="row justify-content-center align-items-center mt-5">
-                <div class="col-4">
+                <div class="col-4 icon">
                     <i class="fas fa-database text-center"></i>
                 </div>
-                <div class="col-6 skillBox">
-                    <div class="frontTitle">
+                <div class="col-10 col-md-6 skillBox wow animate__animated animate__fadeInRight" data-wow-delay="2s">
+                    <div class="frontTitle text-center">
                         <h2>Back-end</h2>
                         <p>Développement de sites web, création et gestion de bases de données, programmation orientée
                             objet, mise en ligne.</p>
@@ -292,7 +300,7 @@
                                 <div class="col-4">
                                     <p>PHP7<br>MySQL<br>SEO</p>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-5 col-md-4">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
@@ -313,8 +321,8 @@
 
             </div>
             <div class="row justify-content-around align-items-center mt-5">
-                <div class="col-6 skillBox">
-                    <div class="frontTitle">
+                <div class="col-10 col-md-6 skillBox wow animate__animated animate__fadeInLeft" data-wow-delay="2s">
+                    <div class="frontTitle text-center">
                         <h2>CMS</h2>
                         <p>Création et édition de thèmes et plugins. Mon expérience est principalement portée sur
                             WordPress. Utilisation des plugins WooCommerce et Yoast SEO.</p>
@@ -325,7 +333,7 @@
                                 <div class="col-4">
                                     <p>Wordpress</p>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-5 col-md-4">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
@@ -335,16 +343,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 text-center">
+                <div class="col-4 icon text-center">
                     <i class="fas fa-user-edit"></i>
                 </div>
             </div>
             <div class="row justify-content-center align-items-center mt-5 mb-5">
-                <div class="col-4">
+                <div class="col-4 icon">
                     <i class="fas fa-paint-brush"></i>
                 </div>
-                <div class="col-6 skillBox">
-                    <div class="frontTitle">
+                <div class="col-10 col-md-6 skillBox wow animate__animated animate__fadeInRight" data-wow-delay="2s">
+                    <div class="frontTitle text-center">
                         <h2>Web design</h2>
                         <p>Création de maquettes XD et retouche photo</p>
                     </div>
@@ -354,7 +362,7 @@
                                 <div class="col-4">
                                     <p>Adobe XD<br>Photoshop<br>Maquettage</p>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-5 col-md-4">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
@@ -382,45 +390,50 @@
                 <h1 class="skillsTitle text-center">Expériences</h1>
             </div>
             <div class="container">
-                
+
                 <ul class="timeline">
                     <li>
-                      <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
-                      <div class="timeline-panel">
-                        <div class="timeline-heading">
-                          <h4 class="timeline-title">Conseillère bancaire</h4>
-                          <p>Orange Bank, Amiens</p>
+                        <div class="timeline-badge wow animate__animated animate__fadeInRight" data-wow-delay="1s"><i class="glyphicon glyphicon-check"></i></div>
+                        <div class="timeline-panel wow animate__animated animate__fadeInLeft" data-wow-delay="1s">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">Conseillère bancaire</h4>
+                                <p>Orange Bank, Amiens</p>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Gestion des comptes clients<br>Gestion du back-office et suivi des
+                                    dossiers<br>Traitement des réclamations et opérations bancaires<br>Montage des
+                                    dossiers de prêts personnels</p>
+                            </div>
                         </div>
-                        <div class="timeline-body">
-                          <p>Gestion des comptes clients<br>Gestion du back-office et suivi des dossiers<br>Traitement des réclamations et opérations bancaires<br>Montage des dossiers de prêts personnels</p>
-                        </div>
-                      </div>
                     </li>
                     <li class="timeline-inverted">
-                      <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
-                      <div class="timeline-panel">
-                        <div class="timeline-heading">
-                          <h4 class="timeline-title">Professeure documentaliste</h4>
-                          <p>Collège Parmentier, Montdidier, académie d'Amiens</p>
+                        <div class="timeline-badge warning wow animate__animated animate__fadeInLeft" data-wow-delay="1s"><i class="glyphicon glyphicon-credit-card"></i></div>
+                        <div class="timeline-panel wow animate__animated animate__fadeInRight" data-wow-delay="1s">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">Professeure documentaliste</h4>
+                                <p>Collège Parmentier, Montdidier, académie d'Amiens</p>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Gestion du centre de documentation et d'information<br>Accueil des
+                                    collègiens<br>Gestion du logiciel de prêt et stock de livres<br>Animation culturelle
+                                </p>
+
+                            </div>
                         </div>
-                        <div class="timeline-body">
-                          <p>Gestion du centre de documentation et d'information<br>Accueil des collègiens<br>Gestion du logiciel de prêt et stock de livres<br>Animation culturelle</p>
-                          
-                        </div>
-                      </div>
                     </li>
                     <li>
-                      <div class="timeline-badge danger"><i class="glyphicon glyphicon-credit-card"></i></div>
-                      <div class="timeline-panel">
-                        <div class="timeline-heading">
-                          <h4 class="timeline-title">Scripte</h4>
-                          <p>Cinéma, télévision, publicité</p>
+                        <div class="timeline-badge danger wow animate__animated animate__fadeInRight" data-wow-delay="1s"><i class="glyphicon glyphicon-credit-card"></i></div>
+                        <div class="timeline-panel wow animate__animated animate__fadeInLeft" data-wow-delay="1s">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">Scripte</h4>
+                                <p>Cinéma, télévision, publicité</p>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Travail en collaboration avec le réalisateur<br>cohérence et continuité de la mise en
+                                    scène en lien avec le scénario</p>
+                            </div>
                         </div>
-                        <div class="timeline-body">
-                          <p>Travail en collaboration avec le réalisateur<br>cohérence et continuité de la mise en scène en lien avec le scénario</p>
-                        </div>
-                      </div>
-                    </li>  
+                    </li>
                 </ul>
             </div>
         </div>
@@ -429,15 +442,15 @@
     <section id="realisation">
         <div class="realisation container-fluid h-100" id="experience">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-12">
                     <div class="section-title">
                         <h1 class="realisationTitle text-center mt-5">Port-folio</h1>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-4">
+        <div class="d-md-flex">
+            <div class="col-4 mb-3 mt-2">
                 <div class="flip-box">
                     <div class="flip-box-inner">
                         <div class="flip-box-front kafe">
@@ -455,7 +468,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-4 mb-3">
                 <div class="flip-box">
                     <div class="flip-box-inner">
                         <div class="flip-box-front hanoi">
@@ -473,7 +486,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-4 mb-3">
                 <div class="flip-box">
                     <div class="flip-box-inner">
                         <div class="flip-box-front street">
@@ -495,21 +508,24 @@
     </section>
     <footer>
         <div class="container">
-            <div class="row justify-content-around align-items-center">
-                <div class="col-3">
-                    <img src="assets/img/facebook.png" alt="logo facebook">
+            <div class="row text-center justify-content-around align-items-center">
+                <div class="col-12 col-md-3 mb-2">
+                    <a href="https://www.facebook.com/pauline.gallezot" target="_blank" ><i class="fab fa-facebook"></i></a>
                 </div>
-                <div class="col-3">
-                    <img src="assets/img/linkedin.png" alt="logo linkedin">
+                <div class="col-12 col-md-3 mb-2">
+                    <a href="https://www.linkedin.com/in/pauline-gallezot-20509020b/" target="_blank" ><i class="fab fa-linkedin"></i></a>
                 </div>
-                <div class="col-3">
-                    <a href="/assets/img/cv.pdf" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Téléchargez mon cv</a>
+                <div class="col-12 col-md-3 mb-2">
+                    <a href="/assets/img/cv.pdf"  target="_blank"><i class="fab fa-github"></i></a>
                 </div>
+            </div>
+            <div class="copyright text-center">
+                <p>Pauline Gallezot © 2021 <br>Tous droits réservés</p>
             </div>
         </div>
     </footer>
-
-    <script src="assets/js/script.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" ></script>
+    <script src="/assets/js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>

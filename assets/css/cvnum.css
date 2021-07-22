@@ -3,12 +3,12 @@ html,body{
 }
 /* page d'accueil */
 #homepage{
-    background-image: url(../img/computer.png);
+    background-image: url(../img/desktop.png);
     background-size: cover;
     background-position: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    color:black;
+    color:rgb(84, 84, 84);
 }
 
 
@@ -45,6 +45,7 @@ html,body{
     border-radius: 15px;
     position: absolute;
 }
+
 .left-dot{
     left: -15px;
     
@@ -90,6 +91,12 @@ background: linear-gradient(90deg, rgba(164,22,26,1) 0%, rgba(186,24,27,1) 40%, 
     border: 1px solid #f1f1f1;
     perspective: 1000px;
   }
+  @media (max-width:576px){
+      .flip-box{
+          width:345px;
+          height:300px;
+      }
+  }
   
   .flip-box-inner {
     position: relative;
@@ -133,19 +140,22 @@ background: linear-gradient(90deg, rgba(164,22,26,1) 0%, rgba(186,24,27,1) 40%, 
     background-size: cover;
     color: black;
   }
-  .telephone{
+  .contact{
       font-size: 20px;
+      color:rgb(84, 84, 84);
   }
   .fa-tty,.fa-at,.fa-envelope{
       font-size: 60px;
-      color: #436077;
+      color: rgb(84, 84, 84);
   }
+  .fa-arrow-alt-circle-down{
+    color: rgb(164,22,26);
+    font-size:40px;
+  }
+  
   .date{
       font-size: 20px;
   }
-  
-  
-  
   .skillBox{
     box-shadow: 3px 3px 5px 0px;
     border-radius: 5px;
@@ -156,13 +166,24 @@ background: linear-gradient(90deg, rgba(164,22,26,1) 0%, rgba(186,24,27,1) 40%, 
   }
   .fa-code,.fa-database,.fa-user-edit,.fa-paint-brush{
       font-size: 100px;
-      color:#436077;
+      color:rgb(84, 84, 84);
+  }
+  .fa-download{
+    color:rgb(84, 84, 84);
+    font-size: 60px;
+  }
+  @media (max-width:576px){
+    .fa-code,.fa-database,.fa-user-edit,.fa-paint-brush{
+        font-size: 60px;
+        color:rgb(84, 84, 84);
+    }
   }
   footer{
       background-color: rgb(46, 46, 46);
   }
   .btn{
-      background-color: #7eb3bb !important;
+      background-color: #f0ad4e !important;
+      color:black !important;
   }
   .timeline {
     list-style: none;
@@ -347,3 +368,37 @@ background: linear-gradient(90deg, rgba(164,22,26,1) 0%, rgba(186,24,27,1) 40%, 
             right: auto;
         }
 }
+@media (max-width: 576px){
+    .icon{
+        display:none;
+    }
+}
+.copyright{
+    color:white;
+}
+.myName{
+    background-color:#EBEBEB;
+    font-size: 30px;
+    
+}
+.myPost{
+    background-color: rgb(84, 84, 84);
+    
+    font-size: 20px;
+    color:white;
+}
+.fa-facebook,.fa-linkedin,.fa-github{
+    color: rgb(164,22,26);
+    font-size: 70px;
+}
+.animate__animated.animate__bounce {
+    --animate-duration: 2s;
+  }
+
+.titleName{
+    font-size:60px;
+}
+.titlePost{
+    font-size:40px;
+}
+  
