@@ -3,7 +3,7 @@ html,body{
 }
 /* page d'accueil */
 #homepage{
-    background-image: url(../img/desktop.png);
+    background-image: url(../img/desktop1.png);
     background-size: cover;
     background-position: center;
     font-family: 'Roboto', sans-serif;
@@ -401,4 +401,11 @@ background: linear-gradient(90deg, rgba(164,22,26,1) 0%, rgba(186,24,27,1) 40%, 
 .titlePost{
     font-size:40px;
 }
-  
+@media (max-width: 576px){
+    .contact1{
+        display:none;
+    }
+}
+.telMail{
+    color:white;
+}
